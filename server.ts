@@ -56,7 +56,7 @@ async function initDatabase() {
     ON CONFLICT (id) DO NOTHING;
   `);
 }
-
+const PORT = process.env.PORT || 3000;
 async function startServer() {
   const app = express();
   const PORT = 3000;
